@@ -1,0 +1,220 @@
+html,
+body,
+ul,
+ol {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Barlow", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container header {
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.7rem;
+}
+.container main {
+  z-index: 3;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.container .container-mobile-image {
+  position: relative;
+  flex: 1;
+}
+.container .container-mobile-image img {
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 85%;
+  min-width: 375px;
+}
+.container .body-content {
+  flex: 1;
+  padding: 0 1.7rem 8rem;
+}
+.container .body-content .line-1 {
+  display: flex;
+  flex-direction: row;
+}
+.container .body-content .label {
+  background-color: #242942;
+  color: #fff;
+  border-radius: 1.2rem;
+  font-size: 0.9rem;
+  padding: 5px 8px;
+}
+.container .body-content .header {
+  font-family: "Barlow Condensed", sans-serif;
+  opacity: 50%;
+  font-size: 0.9rem;
+  letter-spacing: 5px;
+  padding: 5px 8px;
+}
+.container .body-content .title {
+  color: #242942;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.container .body-content h1 {
+  margin: 0;
+}
+.container .body-content P {
+  color: #5b5f71;
+}
+.container .body-content .action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .body-content button {
+  flex: 1;
+  font-family: "Barlow Condensed", sans-serif;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #fff;
+  color: #a0a1ac;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+.container .body-content .primary {
+  background-color: #ff5c5c;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+.container .body-content .second {
+  letter-spacing: 2.5px;
+}
+
+.hidden-mobile {
+  display: none;
+}
+
+.toggle-content {
+  display: none;
+}
+
+.toggle-content.is-visible {
+  display: block;
+}
+
+.modal-navigation {
+  z-index: 10;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transform: translate(-20%, -10%);
+  padding: 1.7rem;
+  width: 100%;
+}
+.modal-navigation .nav-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.modal-navigation .nav-main .nav-item {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #242942;
+  font-weight: 600;
+  padding: 1rem;
+}
+.modal-navigation .nav-main .login {
+  color: #a0a1ac;
+}
+
+.rectangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background-color: #eef3f6;
+  border-radius: 0 0 0 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 6rem;
+    padding-top: 3rem;
+  }
+
+  .hidden-desktop {
+    display: none;
+  }
+
+  .hidden-mobile {
+    display: block;
+  }
+
+  header .header-icon {
+    flex: 1;
+  }
+
+  .nav-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .nav-desktop li {
+    list-style-type: none;
+  }
+  .nav-desktop .nav-item {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #242942;
+    font-weight: 600;
+  }
+
+  .container-body-desktop {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+  }
+  .container-body-desktop .container-desktop-image {
+    width: 50%;
+  }
+  .container-body-desktop .container-desktop-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container-body-desktop .body-content {
+    width: 50%;
+  }
+  .container-body-desktop .body-content .title {
+    font-size: 72px;
+    line-height: 4.5rem;
+  }
+  .container-body-desktop .body-content .desc {
+    padding-bottom: 3rem;
+    width: 50%;
+  }
+  .container-body-desktop .body-content .action {
+    width: 80%;
+  }
+  .container-body-desktop .body-content .action button {
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

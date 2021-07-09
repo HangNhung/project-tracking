@@ -17,6 +17,10 @@ ol {
   height: 100%;
   width: 100%;
   font-family: $barlowFont;
+
+  li {
+    list-style-type: none;
+  }
 }
 
 // mixin
@@ -212,9 +216,6 @@ ol {
   .nav-desktop {
     @include flex();
     justify-content: space-evenly;
-    li {
-      list-style-type: none;
-    }
     .nav-item {
       @include secondFont();
       color: $darkBlueColor;

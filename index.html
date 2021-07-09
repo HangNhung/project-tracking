@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css"/>
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+
   <title>Ellen Hang | Project tracking intro component</title>
 </head>
+
 <body>
   <div class="container">
-    <div class="modal-navigation hidden-desktop toggle-content">  
+    <div class="modal-navigation hidden-desktop toggle-content">
       <ul class="nav-main">
-        <div class="nav-item">PRODUCT</div>
-        <div class="nav-item">FEATURES</div>
-        <div class="nav-item">PRICING</div>
-        <div class="nav-item login">LOGIN</div>
+        <li class="nav-item">PRODUCT</li>
+        <li class="nav-item">FEATURES</li>
+        <li class="nav-item">PRICING</li>
+        <li class="nav-item login">LOGIN</li>
       </ul>
     </div>
     <header>
@@ -32,40 +36,33 @@
             <li class="login">LOGIN</li>
           </ul>
           <div class="nav-bar-mobile hidden-desktop">
-            <img src="./images/icon-hamburger.svg" 
-            alt="icon-hamburger"
-            id="hambuger"
-            class="toggle-content is-visible"
-            onclick="show()">
-            <img src="./images/icon-close.svg" 
-            alt="icon-close"
-            id="close"
-            class="toggle-content"
-            onclick="hide()">
+            <img src="./images/icon-hamburger.svg" alt="icon-hamburger" id="hambuger" class="toggle-content is-visible"
+              onclick="show()">
+            <img src="./images/icon-close.svg" alt="icon-close" id="close" class="toggle-content" onclick="hide()">
           </div>
         </nav>
       </div>
     </header>
     <main>
-      <section class="container-mobile-image hidden-desktop">
-        <img src="./images/mobile-content.ipg" alt="image" class="hidden-desktop"/>
-      </section>
-  
+      <div class="container-mobile-image hidden-desktop">
+        <img src="./images/mobile-content.ipg" alt="image" class="hidden-desktop" />
+      </div>
+
       <section class="container-body-desktop">
         <div class="body-content">
           <div class="line-1">
             <p class="label">NEW</p>
             <p class="header">MONOGRAPH DASHBOARD</p>
           </div>
-         <h1 class="title">POWERFUL INSIGHTS INTO YOUR TEAM</h1>
-         <p class="desc">Project planning and time tracking for agile teams</p>
-         <div class="action">
-           <button type="button" class="primary">SCHEDULE A DEMO</button>
-           <button type="button" class="second">TO SEE A PREVIEW</button>
-         </div>
+          <h1 class="title">POWERFUL INSIGHTS INTO YOUR TEAM</h1>
+          <p class="desc">Project planning and time tracking for agile teams</p>
+          <div class="action">
+            <button type="button" class="primary">SCHEDULE A DEMO</button>
+            <button type="button" class="second">TO SEE A PREVIEW</button>
+          </div>
         </div>
         <div class="container-desktop-image hidden-mobile">
-          <img src="./images/desktop-content.png" alt="image" class="hidden-mobile"/>
+          <img src="./images/desktop-content.png" alt="image" class="hidden-mobile" />
         </div>
       </section>
     </main>
@@ -73,12 +70,12 @@
   <div class="rectangle"></div>
 
   <script>
-    function show () {
+    function show() {
       document.getElementsByClassName("modal-navigation")[0].classList.add("is-visible");
       document.getElementById("hambuger").classList.remove("is-visible");
       document.getElementById("close").classList.add("is-visible");
-    } 
-    function hide () {
+    }
+    function hide() {
       document.getElementsByClassName("modal-navigation")[0].classList.remove("is-visible");
       document.getElementById("close").classList.remove("is-visible");
       document.getElementById("hambuger").classList.add("is-visible");
@@ -86,4 +83,5 @@
     }
   </script>
 </body>
+
 </html>

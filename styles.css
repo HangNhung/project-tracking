@@ -9,6 +9,12 @@ ol {
   width: 100%;
   font-family: "Barlow", sans-serif;
 }
+html li,
+body li,
+ul li,
+ol li {
+  list-style-type: none;
+}
 
 * {
   box-sizing: border-box;
@@ -172,9 +178,6 @@ ol {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  }
-  .nav-desktop li {
-    list-style-type: none;
   }
   .nav-desktop .nav-item {
     font-family: "Barlow Condensed", sans-serif;
